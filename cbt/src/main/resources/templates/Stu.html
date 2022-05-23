@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" th:href="@{/css/stu.css}">
+
+	</head>
+	<body>
+		<div class="container">
+			<form class="content" method="post" th:action="@{/cha}" >
+				<div class="bx">
+					<div class="box">
+						<div class="top">
+							<div class="left"><a th:href="@{/msg}">当前位置>学生成绩信息</a></div>
+							<div class="right">
+								<button class="r">查询</button>
+							</div>
+						</div>
+						<div class="content">
+							<div class="left">
+								<i class="column"></i>
+								<span class="tit">学生成绩信息</span>
+							</div>
+						</div>
+						<div class="bottom">
+							<ul class="one">
+								<li>
+									<span>学生学号：</span>
+									<input type="text" class="oInp" name="stuname">
+								</li>
+								<li>
+									<span>课程编号：</span>
+									<input type="text" class="oInp" name="cource">
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</form>
+		</div>
+	</body>
+</html>

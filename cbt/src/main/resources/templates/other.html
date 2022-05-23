@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" th:href="@{/css/StudentInformation.css}">
+	</head>
+	<body>
+		<div class="container">
+			<form class="content" method="post" th:action="@{/update}">
+				<div class="bx">
+					<div class="box">
+						<div class="top">
+							<div class="left"><a th:href="@{/msg}">当前位置>学生课程信息</a></div>
+							<div class="right">
+								<button class="r">保存</button>
+							</div>
+						</div>
+						<div class="content">
+							<div class="left">
+								<i class="column"></i>
+								<span class="tit">学生课程</span>
+							</div>
+						</div>
+						<div class="bottom">
+							<div class="one">
+								<div class="left">
+									<span>学生学号：</span>
+									<input type="text" name="ID" th:value="${mss.getID()}"/>
+								</div>
+								<div class="right">
+									<span>学生姓名：</span>
+									<input type="text" name="stuname" th:value="${mss.getName()}"/>
+								</div>
+							</div>
+							<div class="one">
+								<div class="left">
+									<span>课程编号：</span>
+									<input type="text" name="cID" th:value="${mss.getCourceID()}"/>
+								</div>
+								<div class="right">
+									<span>课程名称：</span>
+									<input type="text" name="cource" th:value="${mss.getCource()}"/>
+								</div>
+							</div>
+							<div class="one">
+								<div class="left">
+									<span>班级：</span>
+									<input type="text" name="classname" th:value="${mss.getClassname()}"/>
+								</div>
+								<div class="right">
+									<span>学生成绩：</span>
+									<input type="text" name="grade" th:value="${mss.getGrade()}"/>
+								</div>
+							</div>
+							<div class="one">
+								<div class="left">
+									<span>授课老师：</span>
+									<input type="text" name="teacher" th:value="${mss.getTeachername()}"/>
+								</div>
+								<div class="right">
+									<input type="hidden" name="timer" th:value="${mss.getTimer()}"></input>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</form>
+		</div>
+	</body>
+</html>

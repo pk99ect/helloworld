@@ -1,0 +1,171 @@
+
+.container .information-content{
+    font-size: 17px;
+    color: #666;
+}
+.container .content .information-title{
+    width: 100%;
+    font-size: 16px;
+    height: 75px;
+    line-height: 75px;
+    margin-left:30px;
+    position: relative;
+    color:#666;
+}
+.container .content .information-title .fac-information{
+    position: absolute;
+    left:636px ;
+    top:20px;
+}
+.container .content .revise-content{
+    width:244px;
+    margin: 0 auto;
+    margin-top: 102px;
+
+}
+.container .content .revise-content .list{
+    color: #666;
+    margin-bottom: 30px;
+}
+.container .content .revise-content .list input{
+    width:140px ;
+    height:28px;
+    border:1px solid #ccc;
+    color: #666;
+    outline: none;
+    padding-left: 8px;
+}
+.container .content .list1{
+     width: 100px;
+     height: 30px;
+     border-radius: 6px;
+     margin-left: 362px;
+    padding-bottom: 418px;
+
+}
+.container .content .list1 input{
+    width: 100%;
+    height: 100%;
+    line-height: 30px;
+    background: #177ec1;
+    outline: none;
+    border:none;
+    color: #fff;
+    font-size: 17px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius:3px;
+}
+@charset "utf-8";
+
+/** 清除内外边距 **/
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+p,
+blockquote,
+
+    /* structural elements 结构元素 */
+
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+
+    /* list elements 列表元素 */
+
+pre,
+
+    /* text formatting elements 文本格式元素 */
+
+form,
+fieldset,
+legend,
+button,
+input,
+textarea,
+
+    /* form elements 表单元素 */
+
+th,
+td
+    /* table elements 表格元素 */
+
+{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+/*
+ * 完美轻拂动
+ */
+.clearfix:after{
+    clear: both;
+    display: block;
+    content: '';
+}
+
+/*
+ * IE6兼容问题的清除浮动
+ */
+.clearfix{
+    zoom: 1;
+}
+
+/*
+ * 左浮动
+ */
+.fl{
+    float: left;
+}
+
+/*
+ * 有浮动
+ */
+.fr{
+    float: right;
+}
+
+/*
+ * 安全距离，容器
+ */
+
+.container{
+    width:100%;
+    background: #eeeeee;
+    /*padding:30px 60px 65px 30px;*/
+}
+.content{
+    width:780px;
+    background: #ffffff;
+    -moz-border-radius:8px;
+    -webkit-border-radius:8px;
+    border-radius: 8px;
+    margin: 30px auto;
+}
+b,strong{
+    font-weight: normal;
+}
+i,em{
+    font-style: normal;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+body,html{
+    background: #eeeeee;
+    height: 100%;
+}
